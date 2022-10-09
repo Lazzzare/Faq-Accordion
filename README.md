@@ -1,5 +1,5 @@
 # Links
-- Solution URL: [GitHub Code]([https://github.com/Lazzzare/Faq-Accordion])
+- Solution URL: [GitHub Code](https://github.com/Lazzzare/Faq-Accordion)
 - Live Site URL: [Live Site]([https://peaceful-lamington-d296c1.netlify.app/])
 
 
