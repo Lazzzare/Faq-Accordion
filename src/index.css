@@ -29,9 +29,21 @@ body {
   width: 400px;
 }
 
+@media only screen and (max-width: 765px) {
+  .container {
+    width: 350px;
+  }
+}
+
 .container > article:first-child img {
   display: block;
   margin: -150px auto;
+}
+
+@media only screen and (max-width: 765px) {
+  .container > article:first-child img {
+    width: 300px;
+  }
 }
 
 .container > article.text-article {
