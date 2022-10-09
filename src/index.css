@@ -1,13 +1,101 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(180deg, #B068E9 0%, #6463E7 100%);
+  background-repeat: no-repeat;
+  min-height: calc(100vh - 0.1px);
+  font-size: 14px;
+  overflow-x: hidden;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.container {
+  background-color: #fff;
+  padding: 1.25rem;
+  border-radius: 1rem;
+  width: 400px;
+}
+
+.container > article:first-child img {
+  display: block;
+  margin: -150px auto;
+}
+
+.container > article.text-article {
+  margin-top: 150px;
+}
+
+.container h1 {
+  padding-top: 40px;
+  align-items: center;
+  text-align: center;
+  font-weight: 700;
+  color: #1E1F36;
+  font-size: 32px;
+  line-height: 39px;
+  margin-bottom: 40px;
+}
+
+.single-article {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+article h2 {
+  color: #4B4C5F;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 16px;
+  border-bottom: 0.1rem solid #E8E8EA;
+  padding: 18px 0;
+  margin-right: 10px;
+}
+
+article h2.clicked {
+  color: #1E1F36;
+  font-weight: 700;
+}
+
+article p {
+  color: #787887;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.icon {
+  color: #F47B56;
+}
+
+@media only screen and (min-width: 765px)  {
+  .container {
+    width: 620px;
+    padding: 50px;
+  }
+  .text-article h1 {
+    font-size: 45px;
+  }
+
+  article h2 {
+    font-size: 16px;
+  }
+  article p {
+    font-size: 15px;
+    padding: 10px 0;
+  }
 }
